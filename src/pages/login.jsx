@@ -28,18 +28,18 @@ const navigate = useNavigate()
                            localStorage.setItem('UserEmail' , email)
                            setUser(email)
                            navigate('/')
-
+ 
                         }} style={{width:'80%', marginBottom:26 ,backgroundColor:'#0277bd' ,borderWidth:1, borderColor:'white'}}  type="submit">
                            Start Shopping 
                           </Button>
                           <div  style={{color:'white'}}>
-                            Join The Club , <a style={{color:'white'}} href="/Signin">Click here</a>
+                            Join The Club , <a style={{color:'white'}} onClick={()=>navigate('/signin')}>Click here</a>
                           </div>
                           </Form>
             </div>
             </Col>
             <Col>
-              <img src={LoginImg} style={{height:'80vh'}} alt="" />
+              <img src={LoginImg} style={{height:'80.7vh'}} alt="" />
             </Col>
         </Row>
     
